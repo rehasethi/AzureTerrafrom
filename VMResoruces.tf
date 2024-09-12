@@ -1,5 +1,5 @@
 resource "azurerm_virtual_machine" "vm1" {
-  name                  = "testetstetestghavm"
+  name                  = "testetstetestghavm3"
   resource_group_name   = "TerraformRGgha"
   location              = "East US"
   network_interface_ids = [azurerm_network_interface.nic1.id]
@@ -37,7 +37,7 @@ resource "azurerm_virtual_machine" "vm1" {
 }
 
 resource "azurerm_virtual_network" "vnet1" {
-  name                = "testetstetestgha"
+  name                = "testetstetestgha1"
   address_space       = ["10.0.0.0/16"]
   location            = "East US"
   resource_group_name = "TerraformRGgha"
@@ -65,7 +65,7 @@ resource "azurerm_network_interface" "nic1" {
 }
 
 resource "azurerm_public_ip" "public1" {
-  name = "testetstetestgha-tywteywgjh"
+  name = "testetstetestgha-tywteywgjh1"
   resource_group_name = "TerraformRGgha"
   location = "East US"
   allocation_method = "Static"
